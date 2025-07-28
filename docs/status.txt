@@ -1,0 +1,330 @@
+Status of the Integrated Global Radiosonde Archive
+(Additional information on IGRA is available at 
+https://www.ncei.noaa.gov/products/weather-balloon/integrated-global-radiosonde-archive)
+
+January 25, 2023, upcoming change:
+
+During the first half of February, IGRA will change to version 2.2.
+With this new version, data back to 2014 will be supplemented with 
+radiosonde reports received in the Binary Universal Form for the
+Representation of meteorological data (BUFR).  For IGRA users, this
+means that records for stations that have transitioned fully to using
+the BUFR format can again be updated in IGRA.  See the igra2-readme.txt file
+and the IGRA Product Description for additional details.
+
+Jun 27,2020, GTS decoding bug fixed:
+Thanks to Dr John Smallwood at Mullard Space Science Laboratory, UCL, UK,
+a bug in GTS decoder has been found and fixed. For maximum wind reported 
+in GTS PPCC, pressure is in tenths of a hectopascal but it was incorrectly 
+decoded as hPa. GTS data since 2018 have been reprocessed; data before 2018 
+will be reprocessed in the next annual rebuild.
+
+May 28, 2020, IGRA-v1 is going to be offline
+In the coming months we will remove the IGRA-v1 from NCEI website. As the 
+first step of this action, v1 has been moved to subdirectory v1/ToBeDeleted/
+
+August 12, 2016, upcoming change:
+
+During the week of August 15, version 2 of IGRA will move from beta status
+to fully operational status.
+IGRA 1 will continue to be available to users for the foreseeable future, but
+will no longer be updated.
+If all goes according to plan, the transition will begin on August 16.
+By the end of the transition, users should find that the version 1
+files will have been moved to subdirectory v1. During the transition,
+some or all of the files may appear in the IGRA directories, but, after
+August 15, users are advised to wait with using IGRA again until another
+update has been entered into this file indicating that the transition has
+been completed.
+See below for information on the difference between IGRA 1 and 2.
+
+
+September 11, 2014 Addition
+
+A beta version of IGRA v2 is now available, including sounding data, monthly
+means, derived parameters, station history information, and basic format
+documentation. IGRA 2beta is available in the FTP directory
+http://www1.ncdc.noaa.gov/pub/data/igra/v2beta/ or at ftp.ncdc.noaa.gov 
+under pub/data/igra/v2beta. All other files in
+http://www1.ncdc.noaa.gov/pub/data/igra/ as well as the webpages at
+http://www.ncdc.noaa.gov/oa/climate/igra/ will continue to reflect IGRA 1
+until IGRA 2 has completed NCDC's internal review process and been approved as
+NCDC's official replacement of IGRA 1. For more information on IGRA 2,
+see http://www1.ncdc.noaa.gov/pub/data/igra/v2beta/igra2-readme.txt .
+
+
+September 9, 2014, Update:
+
+1. The annual reprocessing of data through the end of the last calendar year
+   has been completed, and the data files in the data-y2d directory now begin
+   with January 1, 2014. 
+2. As part of this reprocessing, previously missing data for December 14-31 
+   of the years 2008, 2010, and 2012 have been restored. 
+3. Monthly-mean files now reflect the composited data rather than
+   the uncomposited data as was inadvertently the case in the previous version.
+4. The long-outdated Version 1 of the IGRA-derived parameters has been
+   removed from this FTP directory.  IGRA-derived parameters can be accessed
+   in subdirectory derived-v2.
+
+
+July 3, 2014 Fix and Problem Notification:
+
+1. Thanks to Mohamadou Abdoulaye Diallo at the University of Virginia, An 
+ error in the IGRA derived-v2 readme.txt was fixed: Column 9, previously 
+ listed as "virtual temperature gradient", should be variable VPTEMP for
+ "virtual potential temperature".
+
+2. It has also come to our attention that the monthly means in the monthly-por 
+are based on the uncomposited rather than the composited datafiles.
+This status file will be updated when the issue is resolved,
+possibly later this month. This issue also affects any RATPAC stations that
+have composite dates from the mid-1990s onward in that the RATPAC
+series for these stations may be less complete than they could be.
+
+
+January 27, 2014:
+
+The missing IGRA data between January 7 and 17 have been filled in,
+ and regular updates for IGRA have Been working properly again since January 18.
+
+
+January 17, 2014:
+
+Due to an unusually large file of GTS reports that was received from NCEP
+and "choked" the relevant ingest processing it NCDC,
+the IGRA 1  processing system has not had access to GTS data since January 9.
+A resolution is still being worked out, and it is hoped that IGRA updates
+will resume sometime within the next week.
+
+
+September 26, 2013:
+
+Effective on this date, IGRA data through 2012 have been reprocessed
+through the IGRA period-of-record quality assurance process (see Durre
+et al. 2006), and the year-to-date files now begin on January 1, 2013.
+
+
+January 6, 2011, new IGRA-derived data:
+Version 2 of the IGRA-derived sounding parameters is now available, 
+containing a significant number of additional parameters. For 
+details, see the readme.txt file in subdirectory derived-v2. The 
+related webpage will be updated shortly. For the benefit of regular 
+users, version 1 will continue to be available through March 31, 2011, as well.
+
+January 6, 2011, known uncorrected problem:
+Several users have identified stations in IGRA where wind speeds during 
+January and February of the years 1975-1978 and 1981-1982 are an order 
+of magnitude too large when compared with other data sources. Stations in 
+Texas, Alaska, and the Canadian Arctic are known to be affected. Unfortunately,
+we are unable to address this issue at this time. It will, however, be 
+rectified in the next version of IGRA. In the meantime, users are advised to 
+look out for this issue at any IGRA station during the affected years and 
+months and handle it as they see it.
+
+October 5, 2010:
+Thanks to Liangying Zhang of NCAR, the metadata for U.S. and Australian stations
+Have been updated. The 475 added or edited records are
+identified with an update date of 06/2010 and a reference of "Updated by
+NCAR/EOL". Updates are based on information received by NCAR from the U.S.
+National Weather Service and the Australian Bureau of Meteorology.
+
+
+April 29, 2010:
+
+An updated IGRA metadata file has been placed online.
+
+The main changes compared to the previous version include:
+- the addition of several thousand records;
+- a change in the format to accommodate instrument names up to 40 
+  characters in length; 
+- standardization of instrument names;
+- elimination of various format issues; and
+- enhanced documentation.
+
+For details, including a description of the new format, see
+http://www1.ncdc.noaa.gov/pub/data/igra/igra-metadata-description.txt. 
+
+
+November 18, 2009, change:
+
+An error in The calculation of relative humidity in the IGRA-derived data files
+was fixed in the version that became available on 18 November 2009. The error
+was due to inadvertent premature rounding of the actual and saturation vapor
+pressures to the nearest 0.1 mb and the unintentional rounding of the relative
+humidity itself to the nearest whole percent rather than the nearest 0.1%. the
+impact of the error ranged from less than 1% under warm, moist conditions to a
+few tens of a percent when the saturation vapor pressure was less than 1 mb
+(i.e., under cold and dry conditions under which radiosonde humidity
+measurements are also not very reliable). At the same time, the precision of
+both the actual end saturation vapor pressures written to the output files has
+been increased from mb*10 to mb*1000 in order to achieve improved consistency
+between the vapor pressure and relative humidity values written. Users are
+cautioned, however, that this precision is not necessarily a reflection of the
+actual measurement precision of the instrument. Since the entire data set is
+re-created every day, both changes apply to all IGRA-derived data effective
+immediately, and returning users who may have been affected by the error can
+refresh their own holdings. Thank you to Penny Rowe and her colleagues for
+pointing out the issues.
+
+
+January 3, 2008, change:
+
+The following changes have been made to the format of the IGRA-derived 
+data:
+1. The missing value code for all variables has been changed from -9999 to 
+-99999, so that it falls outside the range of possible values in all 
+fields. Accordingly, calculated values that fall outside the range -99998 
+and 99998 are set to missing.
+2. The fields for actual vapor pressure and saturation vapor pressure have 
+been moved, such that they now immediately precede relative humidity. See 
+the readme file in the subdirectory "derived" for specifics on the format 
+of the derived data files.
+3. When the saturation vapor pressure is 0, relative humidity is now set 
+to missing rather than to 0.
+
+August 23, 2007, fix:
+
+1. The pre-2006 monthly means, which had been lost during the last monthly 
+   update on August 5, have been restored and, as of August 23,
+   they are based on IGRA version 1.2.
+2. The files in the monthly-por and monthly-upd directories are now being
+   compressed into .gz format as the sounding files have been since July. 
+   They can be uncompressed using a Windows unzip utility or the Linux/UNIX 
+   gunzip command.
+
+August 20, 2007, Problem:
+
+Due to an oversight, the changes that were made to the online sounding files
+in July were not applied to the monthly-mean files. As a result, the monthly
+files are currently still being compressed into .Z rather than .gz format, and
+the period-of-record monthly-mean files currently only contain data for 2006
+and 2007. We will get the problem rectified as soon as possible and update and
+notify users of the fix via the status file.
+
+August 9, 2007, update:
+The igra-composites.txt file has now been updated to reflect the compositing
+performed as part of the last period-of-record reprocessing. See the
+readme.txt file for further details on the composites list.
+
+
+August 6, 2007, Fix:
+During the last period-of-record update in mid-July, the 1949-1973 data 
+for 72249 had been lost. These data have now been restored.
+
+July 30, 2007, addition:
+Some parameters that have been derived from IGRA are now available in the
+subdirectory "derived" on the FTP site of IGRA. Parameters include, for
+example, potential temperature, relative humidity, and temperature gradient
+between consecutive levels and are computed for each suitable level available
+in IGRA. For details, see
+http://www1.ncdc.noaa.gov/pub/data/igra/derived/readme.txt. 
+July 30, 2007, addition:
+Some parameters that have been derived from IGRA are now available in the
+subdirectory "derived" on the FTP site of IGRA. Parameters include, for
+example, potential temperature, relative humidity, and temperature gradient
+between consecutive levels and are computed for each suitable level available
+in IGRA. For details, see
+http://www1.ncdc.noaa.gov/pub/data/igra/derived/readme.txt. 
+
+July 16, 2007, changes to create IGRA Version 1.2:
+1. Data files are now compressed in GZIP format (creating files with the 
+   extension .gz) rather than by using the Unix "compress" command (which 
+   generates .Z files). The .gz files can be uncompressed, for example, using 
+   WINZIP or the Linux "gunzip" command.
+2. The data through the end of 2006 that are contained in the 
+   period-of-record files in the data-por directory have been processed through 
+   the entire IGRA processing system, including those checks that cannot be 
+   run during the daily processing (see Durre et al. 2006). Accordingly, the 
+   year-to-date files in the data-y2d directory now begin with January 1, 2007.
+3. The dates in the igra-composites.txt files have yet to be updated
+   accordingly.
+
+November 2006 correction:
+The period-of-record monthly-mean files uploaded this past summer were 
+found to be missing data for all inactive stations. The problem has been 
+rectified, and the files now again contain data for all qualifying IGRA 
+stations. See the readme file for more information on these files.
+
+July 2006, addition:
+The directory monthly-upd was added to the IGRA FTP directory. It contains
+files of monthly means for only the last full month of data available and is
+intended for users interested in only those monthly means that have newly
+become available in the past month.
+
+July 2006, change to version 1.10:
+1. The entire period of record through December 31, 2005, has been reprocessed
+through the entire suite of quality control checks. The reprocessing permitted
+the application of checks for runs-in-time and temporal inconsistencies that
+cannot be applied during the daily updates and allowed for the use of
+climatologies and monthly median elevation statistics that have been updated
+using data from 2004 in 2005. As a result of this reprocessing, some values
+previously retained are now removed, and vice versa. The number of values
+deleted experiences a net change by approximately 7000, or 0.2% of the total
+number of values deleted.
+2. The year-to-date files in directory data-y2d have been changed to begin on
+January 1, 2006, rather than January 1, 2004. 
+3. Monthly means have been recomputed using the reprocessed data. 
+4. The list of IGRA composites has been updated to reflect the period of
+record through December 31, 2005, and the last year of data in the IGRA
+station list has been updated to reflect data holdings as of July 2006.
+
+February 6, 2006:
+The paper describing IGRA has appeared in the January 1, 2006, issue of the
+Journal of Climate. See the references link on the IGRA homepage.
+
+January 27, 2006, addition:
+Station history information for IGRA stations is now available at the 
+"metadata" link on the IGRA homepage.
+
+November 10, 2005, change:
+Inconsistencies between the country codes in the IGRA station list and those
+in the country code list were discovered and fixed today. 
+
+August 2005, change:
+The files of monthly means are now sorted properly by station number and 
+year. This fixes the issue of 2004+ data being appended to the bottom of files
+that was discovered in January 2005.
+
+July 18, 2005, addition:
+A paper providing an overview of IGRa (accepted by J. Climate) is now
+available in the FTP directory as igra.overview.pdf.
+
+July 18, 2005, change:
+The files containing lists of IGRA stations, country codes, and composite
+stations have been renamed to igra-stations.txt, igra-countries.txt, and
+igra-composites.txt in order to adhere to NCDC standards.
+
+June 29, 2005, changes (creating v1.02):
+1. Reorganized FTP directory to provide all documentation in the main igra
+   directory and streamline the data directories (see readme.txt).
+2. Added stations 43599 (Gan, Maldive Islands) and 83779 (Marte, Brazil)
+   to the IGRA station list. Processing of the two new stations began in 
+   February, and their data extend back to 2004.
+3. In the station list, GUAN identifiers and periods of record were updated,
+   and the 3-digit country codes were replaced with 2-character FIPS codes
+   (see readme.txt) to conform with NCDC convention.
+
+May 21, 2005, discovery and fix:
+Fourteen extraneous station files were discovered in the data-por subdirectory
+under the IGRA FTP directory. These files have been removed.
+
+November 2004 addition:
+Beginning of near-realtime daily updates to the sounding data.
+
+
+October 2004 discovery:
+The Thai stations 48327 and 48407 have a tendency for reporting
+soundings whose launch time differs by 5-6 hours from their observation
+hour and, therefore, are elim`nated by the quality assurance process. The
+issue may be related to launch times being reported as local time rather
+than as UTC and will be addressed when the next version of IGRA is created.
+(During IGRA development, an analogous problem was noted at the 
+South Pole Station (89009) for 2000 and 2001, prompting the exclusion 
+of that station from the check for consistency between launch time and 
+observation hour.)
+
+September 2004 addition:
+Beginning of monthly updates to the monthly-mean data.
+
+May 2004: 
+Completion of the base version of IGRA 1.0 (through 2003)

@@ -1,0 +1,13 @@
+variable,start_icol,end_icol,type
+HEADREC,0,1,Character
+ID,1,12,Character
+YEAR,13,17,Integer
+MONTH,18,20,Integer
+DAY,21,23,Integer
+HOUR,24,26,Integer
+RELTIME,27,31,Integer
+NUMLEV,32,36,Integer
+P_SRC,37,45,Character
+NP_SRC,46,54,Character
+LAT,55,62,Integer
+LON,63,71,Integer

@@ -1,0 +1,9 @@
+col_name,start_icol,end_icol,type
+id,0,11,string
+lat,12,21,float
+lon,21,30,float
+height,31,37,float
+name,41,71,string
+start_year,71,76,integer
+end_year,77,81,integer
+n_sondes,82,88,integer

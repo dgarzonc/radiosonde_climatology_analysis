@@ -1,0 +1,14 @@
+variable,start_icol,end_icol,type
+LVLTYP1,0,1,Integer
+LVLTYP2,1,2,Integer
+ETIME,3,8,Integer
+PRESS,9,15,Integer
+PFLAG,15,16,Character
+GPH,16,21,Integer
+ZFLAG,21,22,Character
+TEMP,22,27,Integer
+TFLAG,27,28,Character
+RH,28,33,Integer
+DPDP,34,39,Integer
+WDIR,40,45,Integer
+WSPD,46,51,Integer

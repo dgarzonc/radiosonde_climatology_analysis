@@ -1,0 +1,75 @@
+IGRA v2.2 Format Description: Supplementary Instrument History Files
+("wmo-sonde-history.txt" and "wmo-wndeq-history.txt")
+
+Last updated: 24 January 2023
+
+---------------------
+Notes:
+---------------------
+
+1. This format description is formatted for viewing in a text editor such as Windows Notepad or similar Linux-based editor.
+
+2. The below format description applies to versions 2.0 to 2.2 of IGRA.
+
+3. The files contain instrument codes extracted from the "31313" group in 
+   Global Telecommunications System (GTS) messages received at NCDC. 
+   These codes are presently available for January 2000 through December 
+   2013. File "wmo-sonde-history.txt" contains the two-digit radiosonde 
+   codes defined in WMO Common Code Table 3685, and "wmo-wndeq-history.txt" 
+   contains the measuring equipment codes defined in WMO Common Code Table
+   0265.
+
+4. Each record in a file indicates the period of consistent usage for one 
+   code at one station as determined from the available GTS messages.
+
+5. Users are cautioned that no attempt has been made to check the supplied codes for accuracy or for consistency with other station history information, except in so far as invalid nonnumeric codes are not shown. 
+
+6. Also note that the WMO routinely reassigns radiosonde codes as old
+   instruments are retired and new ones are placed into operation. Code 52, 
+   for example, refers to a different instrument in 2013 than in 2000. 
+   Reassignments are indicated inWMO Common Code Table 3685.
+
+---------------------------------
+Variable   Columns  Type
+---------------------------------
+ID            1- 11  Character
+BEGYEAR      13- 16  Integer
+BEGMONTH     18- 19  Integer
+BEGDAY       21- 22  Integer
+BEGHOUR      24- 25  Integer
+ENDYEAR      27- 30  Integer
+ENDMONTH     32- 33  Integer
+ENDDAY       35- 36  Integer
+ENDHOUR      38- 39  Integer
+CODE         41- 42  Integer
+---------------------------------
+
+These variables have the following definitions:
+
+ID		is the station identification code. See "igra2-stations.txt"
+		for a complete list of stations and their names and locations.
+
+BEGYEAR 	is the year at the beginning of the usage period.
+
+BEGMONTH	is the month at the beginning of the usage period.
+
+BEGDAY	is the day at the beginning of the usage period.
+
+
+BEGHOUR		is the nominal or observation hour at the beginning of
+		the usage period.
+
+ENDYEAR 	is the year at the end of the usage period.
+
+ENDMONTH	is the month at the end of the usage period.
+
+ENDDAY		is the day at the end of the usage period.
+
+ENDHOUR 	is the nominal or observation hour at the end of the usage
+		period.
+
+CODE		is the radiosonde code in "wmo-sonde-history.txt" (see WMO
+		Common Code Table 3685) or the measuring equipment code in 
+		"wmo-wndeq-history.txt" (see WMO Common Code Table 0265). In
+		either file, -1 indicates that multiple codes were supplied
+		for the same observation time.
