@@ -26,9 +26,9 @@ This toolkit processes data from:
 
 ## Example Case Study
 
-All notebooks demonstrate the complete workflow using **Bogotá, Colombia** radiosonde station (IGRA ID: COM00080222) as a representative tropical highland location, showcasing the seasonal atmospheric structure over the Colombian Andes.
+All notebooks demonstrate the complete workflow using **Bogotá, Colombia** radiosonde station (IGRA ID: COM00080222) as a representative tropical highland location, showcasing the seasonal atmospheric structure over the Colombian Andes. There are also examples of climatological plots for several radiosonde stations in Central and South America in the folder `figures/`.
 
-![Climatology Example](figures/COM00080222/COM00080222_v_wind.png)
+![Climatology Example](figures/COM00080222_BOGOTA_ELDORADO/COM00080222_v_wind.png)
 
 
 
