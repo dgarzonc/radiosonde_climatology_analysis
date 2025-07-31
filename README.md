@@ -1,5 +1,7 @@
 # Radiosonde Climatology Analysis
 
+Author: David Garzón Casas (dgarzonc@unal.edu.co)  - July 2025
+
 A comprehensive Python toolkit for processing and visualizing atmospheric radiosonde climatologies from IGRA-2 (Integrated Global Radiosonde Archive) data.
 
 ## Overview
